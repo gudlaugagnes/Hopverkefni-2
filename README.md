@@ -26,6 +26,7 @@ Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-s
 ## Uppskipting
  
 Verkefnið skiptist upp í möppuna `src` sem inniheldur tvær aðrar möppur: `styles` og `lib` en einnig javascript skrána `index.js`. 
+`lib` mappan inniheldur allar javascript skrárnar nema þessa einu sem var nefnd hér fyrr þ.e. `index.js`. `styles` mappan innihaldur allar `.scss`skrárnar sem eru svo compilaðar í eina `.css` skrá.
  
  
 ---
