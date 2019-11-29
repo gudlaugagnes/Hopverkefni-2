@@ -33,3 +33,22 @@ export function cardsAppear(value) {
     }
   }
 }
+
+let cnt = 0;
+
+export function readButton(button) {
+  const buttonTarget = button.target;
+
+  if (buttonTarget.classList.contains('button-active')) {
+    buttonTarget.className = 'buttons__button';
+    cnt -= 1;
+    if (cnt === 0) {
+      cardsAppear('html');
+      cardsAppear('css');
+      cardsAppear('javascript');
+    }
+  } else {
+    buttonTarget.classList.add('button-active');
+    cnt += 1;
+  }
+}
