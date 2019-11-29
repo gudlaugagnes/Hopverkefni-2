@@ -1,0 +1,122 @@
+@import "config";
+
+
+
+.sida {
+
+  display: flex;
+  justify-content: center;
+  padding: 0 $gutter;
+
+
+  &__efni {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: $max-width;
+  }
+
+  &__valmynd {
+    display: flex;
+    justify-content: center;
+
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+
+    max-width: $max-width;
+  }
+
+  &__takkar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+
+    max-width: $max-width;
+  }
+}
+
+
+
+.takkar {
+
+  display: flex;
+  padding: 0 $gutter;
+
+
+  &__takki {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+
+    background-color: $grar3;
+
+    font-family: $fontHeader;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+
+    &:hover {
+      transition: $trans;
+      background-color: darken($grar3, 20);
+
+    }
+
+    &.button-active {
+      background-color: $ljosgraenn;
+
+      &:hover {
+        background-color: darken($ljosgraenn);
+        transition: $trans;
+      }
+    }
+  }
+}
+
+
+
+.listi {
+
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+
+
+
+
+
+  @media screen and (max-width: 1500px) {
+    width: 80vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 97.6vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80vw;
+  }
+}
+
+
+
+
+
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
