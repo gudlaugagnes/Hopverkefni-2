@@ -11,7 +11,7 @@ export default class List {
     return fetch(this.url)
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Ekki var hægt að sækja fyrirlestra.');
+          throw new Error('Error: not able to obtain lectures.');
         }
         return res.json();
       });
