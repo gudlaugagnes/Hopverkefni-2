@@ -21,11 +21,11 @@ Guðlaug Agnes Kristjánsdóttir
  
 Til þess að keyra verkefnið þarf að byrja á því að sækja það hér af github. Síðan skal farið keyra `npm install` í rót verkefnisins í terminal.
 
-Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-sync`, `sass` og `rollop`.
+Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-sync`, `sass` og `rollup`.
  
 ## Uppskipting
  
-Texti vantar
+Verkefnið skiptist upp í möppuna `src` sem inniheldur tvær aðrar möppur: `styles` og `lib` en einnig javascript skrána `index.js`. 
  
  
 ---
