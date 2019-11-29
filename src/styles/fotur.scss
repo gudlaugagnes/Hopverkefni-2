@@ -1,0 +1,66 @@
+@import "config";
+
+
+.hidden {
+  
+  display: none;
+}
+
+
+
+
+
+
+
+.takki {
+
+  &__hakadur {
+    margin: $gutter 0;
+    font-family: $fontHeader;
+    font-size: 1rem;
+    color: $color-5;
+    background: none;
+    border: 0;
+  }
+}
+
+
+.fotur {
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 $gutter;
+  margin: $gutter*2 0;
+
+  &__efni {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__takki {
+
+    background: none;
+
+    font-family: $fontHeader;
+    font-size: 1rem;
+
+
+    border: 0;
+    margin: $gutter 0;
+  }
+
+  &__len {
+    display: flex;
+    justify-content: center;
+
+
+    font-family: $fontHeader;
+    font-size: 1rem;
+    text-decoration: none;
+
+    margin: $gutter 0;
+  }
+}
