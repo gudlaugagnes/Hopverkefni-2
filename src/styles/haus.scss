@@ -1,20 +1,24 @@
+@import "config";
+
 .haus {
   display: flex;
   background-image: url("../img/header.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 500px;
-} 
+ 
 
-.haus__container {
-  display: flex;
-  padding: 0 $gutter;
-  width: 100%;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.4);
-}
+  & .haus__container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
 
-.haus__efni {
+      padding: 0 $gutter;
+      
+      background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  & .haus__efni {
       display: flex;
       flex-direction: column;
 
@@ -23,4 +27,5 @@
 
       font-family: $fontHeader;
       font-size: 2rem;
+  }
 }
