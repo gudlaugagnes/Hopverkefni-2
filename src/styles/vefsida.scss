@@ -1,31 +1,31 @@
 @import "config";
 
-
-
 .sida {
 
   display: flex;
   justify-content: center;
   padding: 0 $gutter;
 
-
   &__efni {
     display: flex;
+
+    max-width: $max-width;
 
     justify-content: center;
     flex-direction: column;
 
-    max-width: $max-width;
   }
 
   &__valmynd {
     display: flex;
+
+    max-width: $max-width;
+
     justify-content: center;
 
     margin-top: $gutter;
     margin-bottom: $gutter;
 
-    max-width: $max-width;
   }
 
   &__takkar {
@@ -42,33 +42,29 @@
   }
 }
 
-
-
 .takkar {
 
   display: flex;
   padding: 0 $gutter;
 
-
   &__takki {
     display: flex;
     justify-content: center;
-
     padding: 1rem 1.5rem;
-    border: 0;
-    border-radius: 1rem;
-
-    background-color: $grar3;
 
     font-family: $fontHeader;
+
     font-size: 1.5rem;
     font-weight: bold;
 
+    background-color: $grar3;
+
+    border: 0;
+    border-radius: 1rem;
 
     &:hover {
-      transition: $transition;
       background-color: $grar1;
-
+      transition: $transition;
     }
 
     &.button-active {
@@ -90,7 +86,6 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-
   @media screen and (max-width: 1500px) {
     width: 80vw;
   }
@@ -102,9 +97,4 @@
   @media screen and (max-width: 500px) {
     width: 80vw;
   }
-}
-
-h2 {
-  font-size: 1.7rem;
-  font-weight: bold;
 }

@@ -2,35 +2,34 @@
 
 .haus {
   display: flex;
+  height: 31rem;
 
   background-image: url("../img/header.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
 
-  height: 31rem;
+  background-attachment: fixed;
 
   &__container {
 
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
 
-      width: 100%;
+    width: 100%;
 
-      padding: 0 $gutter;
-      
-      background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 $gutter;
+
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   &__efni {
 
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
 
+    font-family: $fontHeader;
+    font-size: 2rem;
 
-      flex-direction: column;
-      align-items: center;
-
-      font-family: $fontHeader;
-      font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
