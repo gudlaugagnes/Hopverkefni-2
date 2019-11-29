@@ -67,7 +67,7 @@
 
     &:hover {
       transition: $transition;
-      background-color: darken($grar3, 20);
+      background-color: $grar1;
 
     }
 
@@ -75,7 +75,7 @@
       background-color: $ljosgraenn;
 
       &:hover {
-        background-color: darken($ljosgraenn);
+        background-color: $dokkgraenn;
         transition: $transition;
       }
     }
