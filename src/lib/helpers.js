@@ -48,7 +48,7 @@ export function buttonGet(button) {
   const buttonTarget = button.target;
 
   if (buttonTarget.classList.contains('button-active')) {
-    buttonTarget.className = 'buttons__button';
+    buttonTarget.className = 'takkar__takki';
     cnt -= 1;
     if (cnt === 0) {
       cardsAppear('html');

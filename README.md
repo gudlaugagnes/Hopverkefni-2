@@ -19,7 +19,9 @@ Guðlaug Agnes Kristjánsdóttir
  
 ## Keyrsla
  
-Texti vantar
+Til þess að keyra verkefnið þarf að byrja á því að sækja það hér af github. Síðan skal farið keyra `npm install` í rót verkefnisins í terminal.
+
+Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-sync`, `sass` og `rollop`.
  
 ## Uppskipting
  

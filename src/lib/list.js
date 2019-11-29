@@ -2,7 +2,7 @@ import { empty } from './helpers';
 
 export default class List {
   constructor() {
-    this.container = document.querySelector('.list');
+    this.container = document.querySelector('.listi');
     this.url = '/lectures.json';
   }
 
