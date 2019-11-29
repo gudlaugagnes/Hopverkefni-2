@@ -34,9 +34,17 @@ export function cardsAppear(value) {
   }
 }
 
-let cnt = 0;
+export function activeButtons() {
+  for (const buttons of document.querySelectorAll('.button-active')) {
+    cardsDisappear(`${buttons.innerHTML}`);
+  }
+  for (const buttons of document.querySelectorAll('.button-active')) {
+    cardsAppear(`${buttons.innerHTML}`);
+  }
 
-export function readButton(button) {
+}
+let cnt = 0;
+export function buttonGet(button) {
   const buttonTarget = button.target;
 
   if (buttonTarget.classList.contains('button-active')) {
@@ -51,4 +59,5 @@ export function readButton(button) {
     buttonTarget.classList.add('button-active');
     cnt += 1;
   }
+  activeButtons();
 }
