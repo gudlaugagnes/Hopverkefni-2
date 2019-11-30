@@ -22,11 +22,48 @@ Guðlaug Agnes Kristjánsdóttir
 Til þess að keyra verkefnið þarf að byrja á því að sækja það hér af github. Síðan skal farið keyra `npm install` í rót verkefnisins í terminal.
 
 Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-sync`, `sass` og `rollup`.
+
+### sass
+
+* Með skipuninni `npm run sass` í terminal er búin til `styles.css` skrá úr öllum `.scss` skrám verkefnisins og inniheldur hún þá allt útlit vefsíðunnar.
+
+### browser-sync
+
+* Með skipuninni `npm run browser-sync` í terminal keyrist vefsíðan upp á vefnum og þar að auki er hægt að gera beytingar á `.html` og `.sass` og munu þá þær breytingar keyrast upp samtímis á vefnum á meðan skipunin er 
+í keyrslu.
+
+### rollup
+
+* Keyrt með skipuninni `npm run rollup` og er notað til að pakka saman öllum Javascript kóða í eina heild.
+
+### dev
+
+*  Með skipuninni `npm run dev` er keyrt `rollup`, `browser-sync` og `node-sass` keyrt samtímis.
+
+### stylelint
+
+* Með skipuninni `npm run stylelint` er keyrður stylelint linterinn.
+
+### eslint
+
+* Með skipuninni `npm run eslint` er keyrður eslint linterinn.
+
+
+### babel
+
+* Keyrt með skipuninni `npm run babel` og er notað til þess að transpila kóðann.
  
+
+
 ## Uppskipting
  
-Verkefnið skiptist upp í möppuna `src` sem inniheldur tvær aðrar möppur: `styles` og `lib` en einnig javascript skrána `index.js`. 
-`lib` mappan inniheldur allar javascript skrárnar nema þessa einu sem var nefnd hér fyrr þ.e. `index.js`. `styles` mappan innihaldur allar `.scss`skrárnar sem eru svo compilaðar í eina `.css` skrá.
+Verkefnið skiptist upp í möppurnar `img`, `src` og `utlit` en svo líka `html` skrárnar `index.html` sem er forsíðan og  `fyrirlestur.html` sem eru síða hvers fyrirlesturs. 
+`img` mappan geymir allar þær myndir sem notaðar eru í verkefninu.
+`utlit` mappan geymir myndir frá kennara sem sýnir hvernig útlit síðu á að vera.
+`src` mappan inniheldur tvær aðrar möppur: `styles` og `lib` en einnig javascript skrána `index.js`. 
+`lib` mappan inniheldur allar javascript skrárnar nema þessa einu sem var nefnd hér fyrr þ.e. `index.js`.
+`styles` mappan innihaldur allar `.scss`skrárnar fyrir útlitið sem eru svo compilaðar í eina `.css` skrá.
+`dist` er mappa sem verður til þegar verkefnið er keyrt og mun innihalda innihalda þýddar sass og JavaScript skrár sem verða til með scriptunum í `package.json` skránni.
  
  
 ---

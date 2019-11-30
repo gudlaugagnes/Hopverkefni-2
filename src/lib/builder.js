@@ -4,7 +4,7 @@ import { createElem } from './helpers.js';
 export function titleMaker(title, text, slug) {
 
   var store = window.localStorage.getItem(slug);
-  var mark = document.createTextNode('\u2714');
+  var mark = document.createTextNode('\u2714'); //unicode fyrir check
 
   const tag = document.createElement('div');
   const textTag = createElem('div');
@@ -54,7 +54,7 @@ function buildText(item) {
   div.className = 'efni__texti';
   const strings = item.data.split('\n');
 
-  for (let i = 0; i < strings.length; i++) {
+  for (let i = 0; i < strings.length; i += 1) {
     const text = createElem('p', strings[i]);
     div.appendChild(text);
   }

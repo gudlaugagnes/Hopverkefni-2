@@ -47,7 +47,7 @@ export default class Lecture {
     headerContent.appendChild(createElem('p', item.category));
     headerContent.appendChild(createElem('h1', item.title));
 
-    for (let i = 0; i < counter; i++) {
+    for (let i = 0; i < counter; i += 1) {
       const type = item.content[i];
       const content = buildTheContent(type);
       pageContainer.appendChild(content);
