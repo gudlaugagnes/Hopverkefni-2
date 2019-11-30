@@ -100,14 +100,18 @@
 }
 
 .yfirlit {
-  display: flex;
   position: relative;
-  justify-content: space-between;
-  flex-direction: column;
+
+  display: flex;
 
   width: $max-width/3;
   margin: $gutter 0;
+
+  justify-content: space-between;
+  flex-direction: column;
+
   background-color: $grar3;
+
   &:hover {
     background-color: $grar1;
 
@@ -129,11 +133,11 @@
   &__efni {
     display: flex;
 
+    padding: $gutter/2;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding: $gutter/2;
   }
 
   &__klarad {
@@ -145,15 +149,16 @@
 
   &__texti {
     display: flex;
-    flex-direction: column;
 
     font-family: $fontHeader;
+
+    flex-direction: column;
   }
 }
 
 .efni {
   display: flex;
-  
+
   &__myndband iframe {
     display: flex;
 
@@ -179,12 +184,12 @@
 
   &__texti p {
     display: flex;
-    flex-direction: column;
 
     margin-top: $gutter;
     margin-bottom: $gutter;
-
     line-height: 2;
+
+    flex-direction: column;
 
     @media (min-width: 500px) {
       width: 65vw;
@@ -200,15 +205,15 @@
   }
 
   &__tilvisun {
-    background-color: $grar2;
-
     padding-top: $gutter;
     padding-bottom: $gutter;
     padding-left: $gutter;
 
     margin-bottom: $gutter;
 
-    & p {
+    background-color: $grar2;
+
+    p {
       margin-bottom: $gutter;
 
       @media (min-width: 500px) {
@@ -264,10 +269,10 @@
   &__kodi {
     justify-content: center;
 
+    max-width: $max-width;
+
     margin-top: $gutter;
     margin-bottom: $gutter;
-
-    max-width: $max-width;
 
     @media (min-width: 500px) {
       width: 65vw;
