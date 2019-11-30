@@ -1,6 +1,6 @@
-export function empty(element) {
-  while (element.firstChild) {
-    element.removeChild(element.firstChild);
+export function objectEmpty(obj) {
+  while (obj.firstChild) {
+    obj.removeChild(obj.firstChild);
   }
 }
 
@@ -15,11 +15,11 @@ export function createElem(elem, text) {
 export function cardsDisappear(value) {
   const new_Val = value.toLowerCase();
 
-  for (const card of document.querySelectorAll('.card')) {
+  for (const card of document.querySelectorAll('.yfirlit')) {
     if (!card.classList.contains(new_Val)) {
-      card.classList.add('card-hidden');
-    } else if (card.classList.contains('card-hidden')) {
-      card.className = `card ${new_Val}`;
+      card.classList.add('yfirlit-falid');
+    } else if (card.classList.contains('yfirlit-falid')) {
+      card.className = `yfirlit ${new_Val}`;
     }
   }
 }
@@ -27,9 +27,9 @@ export function cardsDisappear(value) {
 export function cardsAppear(value) {
   const new_Val = value.toLowerCase();
 
-  for (const card of document.querySelectorAll('.card')) {
+  for (const card of document.querySelectorAll('.yfirlit')) {
     if (card.classList.contains(new_Val)) {
-      card.className = `card ${new_Val}`;
+      card.className = `yfirlit ${new_Val}`;
     }
   }
 }
