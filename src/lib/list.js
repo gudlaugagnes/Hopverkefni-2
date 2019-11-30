@@ -32,10 +32,10 @@ export default class List {
     const imageElement = imgMaker(obj.thumbnail);
     card.appendChild(imageElement);
     const link = createElem('a');
-    const span = createElem('span');
+    const div = createElem('div');
     link.setAttribute('href', `./fyrirlestur.html?slug=${obj.slug}`);
-    link.appendChild(span);
-    card.appendChild(link);
+    div.appendChild(link);
+    card.appendChild(div);
 
     const titleElement = titleMaker(obj.title, obj.category, obj.slug);
     titleElement.className = 'yfirlit__efni';
