@@ -73,7 +73,8 @@ function buildQuote(item) {
   div.appendChild(citation);
 
   return div;
-}+
+}
+
 function buildYouT(item) {
   const div = createElem('div');
   div.className = 'efni__myndband';
@@ -85,7 +86,6 @@ function buildYouT(item) {
   div.appendChild(link);
   return div;
 }
-
 
 function buildCoding(item) {
   const div = createElem('div');
