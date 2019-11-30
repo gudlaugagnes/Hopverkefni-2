@@ -33,9 +33,10 @@ export default class List {
     card.appendChild(imageElement);
     const link = createElem('a');
     const div = createElem('div');
+    div.className = 'linkur';
     link.setAttribute('href', `./fyrirlestur.html?slug=${obj.slug}`);
-    div.appendChild(link);
-    card.appendChild(div);
+    link.appendChild(div);
+    card.appendChild(link);
 
     const titleElement = titleMaker(obj.title, obj.category, obj.slug);
     titleElement.className = 'yfirlit__efni';
