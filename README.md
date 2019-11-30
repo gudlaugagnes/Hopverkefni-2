@@ -38,7 +38,7 @@ Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-s
 
 ### dev
 
-*  Með skipuninni `npm run dev` er keyrt `rollup`, `browser-sync` og `node-sass` keyrt samtímis.
+*  Með skipuninni `npm run dev` er keyrt `rollup`, `browser-sync` og `node-sass` samtímis.
 
 ### stylelint
 
@@ -57,12 +57,18 @@ Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-s
 
 ## Uppskipting
  
-Verkefnið skiptist upp í möppurnar `img`, `src` og `utlit` en svo líka `html` skrárnar `index.html` sem er forsíðan og  `fyrirlestur.html` sem eru síða hvers fyrirlesturs. 
+Verkefnið skiptist upp í möppurnar `img`, `src` og `utlit` en svo líka `html` skrárnar `index.html` sem er forsíðan og `fyrirlestur.html` sem eru síða hvers fyrirlesturs. 
+
 `img` mappan geymir allar þær myndir sem notaðar eru í verkefninu.
+
 `utlit` mappan geymir myndir frá kennara sem sýnir hvernig útlit síðu á að vera.
+
 `src` mappan inniheldur tvær aðrar möppur: `styles` og `lib` en einnig javascript skrána `index.js`. 
+
 `lib` mappan inniheldur allar javascript skrárnar nema þessa einu sem var nefnd hér fyrr þ.e. `index.js`.
+
 `styles` mappan innihaldur allar `.scss`skrárnar fyrir útlitið sem eru svo compilaðar í eina `.css` skrá.
+
 `dist` er mappa sem verður til þegar verkefnið er keyrt og mun innihalda innihalda þýddar sass og JavaScript skrár sem verða til með scriptunum í `package.json` skránni.
  
  
