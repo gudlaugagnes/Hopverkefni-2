@@ -19,7 +19,7 @@ export default class List {
   }
 
   showContent(data) {
-    console.log(data);
+    // console.log(data);
     data.lectures.map((item) => {
       this.showObject(item);
     });
@@ -29,19 +29,22 @@ export default class List {
     const card = createElem('div');
     card.className = `yfirlit ${obj.category}`;
 
-    const imageElement = imgMaker(obj.thumbnail);
-    card.appendChild(imageElement);
-    const link = createElem('a');
+    const imgEl = imgMaker(obj.thumbnail);
+    card.appendChild(imgEl);
+
+
     const div = createElem('div');
     div.className = 'linkur';
+
+    const link = createElem('a');
     link.setAttribute('href', `./fyrirlestur.html?slug=${obj.slug}`);
     link.appendChild(div);
+
     card.appendChild(link);
 
-    const titleElement = titleMaker(obj.title, obj.category, obj.slug);
-    titleElement.className = 'yfirlit__efni';
-    card.appendChild(titleElement);
-
+    const titleEl = titleMaker(obj.title, obj.category, obj.slug);
+    titleEl.className = 'yfirlit__efni';
+    card.appendChild(titleEl);
     this.container.appendChild(card);
   }
 

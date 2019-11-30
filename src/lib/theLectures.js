@@ -1,5 +1,5 @@
 import { buildTheContent } from './builder';
-import { objectEmpty, createElem } from './helpers';
+import { createElem } from './helpers';
 
 
 export default class Lecture {
@@ -26,38 +26,32 @@ export default class Lecture {
       });
   }
 
-  
+
   showObject(item) {
-    const page = document.querySelector('.sida');
-    const pageContainer = createElem('div');
-    pageContainer.className = 'sida__efni';
-    const counter = item.content.length;
-    
-    var store = window.localStorage.getItem(item.slug);
-    
-    const button = document.querySelector('.fotur__takki');
-    const finButton = document.querySelector('.takki__hakadur');
+    const div = createElem('div');
+    div.className = 'sida__efni';
+
+    const storage = window.localStorage.getItem(item.slug);
 
     const header = document.querySelector('.haus');
-    if (item.image != undefined) {
+    if (item.image !== undefined) {
       header.style.backgroundImage = `url('./${item.image}')`;
     }
-
     const headerContent = document.querySelector('.haus__efni');
     headerContent.appendChild(createElem('p', item.category));
     headerContent.appendChild(createElem('h1', item.title));
-
-    for (let i = 0; i < counter; i += 1) {
+    for (let i = 0; i < item.content.length; i += 1) {
       const type = item.content[i];
       const content = buildTheContent(type);
-      pageContainer.appendChild(content);
+      div.appendChild(content);
     }
+    const page = document.querySelector('.sida');
+    page.appendChild(div);
 
-    page.appendChild(pageContainer);
-
-
-    if (store == 'finished') {
-      finButton.classList.remove('hidden');
+    const button = document.querySelector('.fotur__takki');
+    const checkedB = document.querySelector('.takki__hakadur');
+    if (storage === 'finished') {
+      checkedB.classList.remove('hidden');
     } else {
       button.classList.remove('hidden');
     }
@@ -66,13 +60,13 @@ export default class Lecture {
       window.localStorage.setItem(item.slug, 'finished');
       console.log('saved');
       button.classList.add('hidden');
-      finButton.classList.remove('hidden');
+      checkedB.classList.remove('hidden');
     });
-    finButton.addEventListener('click', () => {
+    checkedB.addEventListener('click', () => {
       window.localStorage.removeItem(item.slug);
       console.log(item);
       button.classList.remove('hidden');
-      finButton.classList.add('hidden');
+      checkedB.classList.add('hidden');
     });
   }
 

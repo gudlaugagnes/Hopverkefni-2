@@ -1,12 +1,12 @@
 
 export function retrieveLecture(item) {
-  const slug = item.slug;
-  window.localStorage.removeItem(slug);
+  const slugB = item.slug;
+  window.localStorage.removeItem(slugB);
 }
 
-export function saveLecture() {
-  const slug = item.slug;
-  window.localStorage.setItem(slug, 'finished');
+export function saveLecture(item) {
+  const slugB = item.slug;
+  window.localStorage.setItem(slugB, 'finished');
   console.log('Saved to local storage.');
-  console.log(slug);
+  console.log(slugB);
 }

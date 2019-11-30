@@ -42,11 +42,11 @@ Til að fá vafrann upp skal keyra `npm run dev` sem keyrir samtímis `browser-s
 
 ### stylelint
 
-* Með skipuninni `npm run stylelint` er keyrður stylelint linterinn.
+* Með skipuninni `npm run stylelint` er keyrður stylelint linterinn fyrir CSS/Sass.
 
 ### eslint
 
-* Með skipuninni `npm run eslint` er keyrður eslint linterinn.
+* Með skipuninni `npm run eslint` er keyrður eslint linterinn fyrir javascript.
 
 
 ### babel
