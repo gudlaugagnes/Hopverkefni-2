@@ -7,6 +7,6 @@ export function retrieveLecture(item) {
 export function saveLecture(item) {
   const slugB = item.slug;
   window.localStorage.setItem(slugB, 'finished');
-  console.log('Saved to local storage.');
-  console.log(slugB);
+  // console.log('Saved to local storage.');
+  // console.log(slugB);
 }

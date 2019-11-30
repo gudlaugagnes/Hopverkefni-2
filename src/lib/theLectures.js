@@ -58,20 +58,20 @@ export default class Lecture {
 
     button.addEventListener('click', () => {
       window.localStorage.setItem(item.slug, 'finished');
-      console.log('saved');
+      // console.log('saved');
       button.classList.add('hidden');
       checkedB.classList.remove('hidden');
     });
     checkedB.addEventListener('click', () => {
       window.localStorage.removeItem(item.slug);
-      console.log(item);
+      // console.log(item);
       button.classList.remove('hidden');
       checkedB.classList.add('hidden');
     });
   }
 
   showContent(data) {
-    console.log(data);
+    // console.log(data);
     this.showObject(data);
   }
 

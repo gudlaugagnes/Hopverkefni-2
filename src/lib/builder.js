@@ -40,7 +40,7 @@ export function imgMaker(img) {
   }
   const imageObject = createElem('img');
 
-  imageObject.className = 'yfirlit__mynd'; 
+  imageObject.className = 'yfirlit__mynd';
   imageObject.src = `./${img}`;
 
   return imageObject;

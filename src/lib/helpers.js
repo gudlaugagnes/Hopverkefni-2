@@ -13,23 +13,23 @@ export function createElem(elem, text) {
 }
 
 export function cardsDisappear(value) {
-  const new_Val = value.toLowerCase();
+  const newVal = value.toLowerCase();
 
   for (const card of document.querySelectorAll('.yfirlit')) {
-    if (!card.classList.contains(new_Val)) {
+    if (!card.classList.contains(newVal)) {
       card.classList.add('yfirlit-falid');
     } else if (card.classList.contains('yfirlit-falid')) {
-      card.className = `yfirlit ${new_Val}`;
+      card.className = `yfirlit ${newVal}`;
     }
   }
 }
 
 export function cardsAppear(value) {
-  const new_Val = value.toLowerCase();
+  const newVal = value.toLowerCase();
 
   for (const card of document.querySelectorAll('.yfirlit')) {
-    if (card.classList.contains(new_Val)) {
-      card.className = `yfirlit ${new_Val}`;
+    if (card.classList.contains(newVal)) {
+      card.className = `yfirlit ${newVal}`;
     }
   }
 }
@@ -41,7 +41,6 @@ export function activeButtons() {
   for (const buttons of document.querySelectorAll('.button-active')) {
     cardsAppear(`${buttons.innerHTML}`);
   }
-
 }
 let cnt = 0;
 export function buttonGet(button) {
